@@ -3,10 +3,12 @@
 (function() {
   'use strict';
 
-  describe('Give it some context', function() {
-    describe('maybe a bit more context here', function() {
-      it('should run here few assertions', function() {
-
+  describe('Calculator', function() {
+    describe('add()', function() {
+      it('a + b should be add up', function() {
+        assert.equal(3, add(1, 2));
+        assert.equal(-1, add(1, -2));
+        assert.equal(100, add(90, 10));
       });
     });
   });
